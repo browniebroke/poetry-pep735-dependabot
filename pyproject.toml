@@ -1,0 +1,22 @@
+[project]
+name = "poetry-pep735-dependabot"
+version = "0.1.0"
+description = "Testing Dependabot support for Poerty based project using PEP 735"
+authors = [
+    {name = "Bruno Alla",email = "alla.brunoo@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = "==3.13.*"
+dependencies = [
+    "django==5.2.6"
+]
+
+[dependency-groups]
+dev = [
+    "pytest==8.4.0",
+    "pytest-django",
+]
+
+[tool.poetry]
+package-mode = false
